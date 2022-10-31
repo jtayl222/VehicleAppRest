@@ -1,0 +1,37 @@
+{
+    "vehicleInstances": [
+      {
+        "vehicleType": "Vehicle",
+        "color": "red",
+        "vehicleId": 1
+      },
+      {
+        "vehicleType": "Car",
+        "color": "bright green",
+        "vehicleId": 2,
+        "currentPassengers": 5,
+        "maxPassengers": 4
+      },
+      {
+        "vehicleType": "Car",
+        "color": "lime green",
+        "vehicleId": 3,
+        "currentPassengers": 2,
+        "maxPassengers": 5
+      },
+      {
+        "vehicleType": "Truck",
+        "color": "medium blue",
+        "vehicleId": 4,
+        "currentCargoWeight": 5000,
+        "maxCargoWeight": 4000
+      },
+      {
+        "vehicleType": "Truck",
+        "color": "navy blue",
+        "vehicleId": 5,
+        "currentCargoWeight": 2000,
+        "maxCargoWeight": 5000
+      }
+    ]
+  }

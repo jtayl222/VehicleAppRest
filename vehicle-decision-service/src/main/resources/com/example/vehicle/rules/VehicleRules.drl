@@ -1,0 +1,23 @@
+package com.example.vehicle.rules;
+unit VehicleUnitData;
+
+import com.example.vehicle.datamodel.Car;
+import com.example.vehicle.datamodel.Truck;
+
+rule "Car Rule"
+  when
+    $v : /vehicleInstances#Car[ currentPassengers > maxPassengers ]
+  then
+    modify($v){setOverloaded(true)};
+end
+
+rule "Truck Rule"
+  when
+    $v : /vehicleInstances#Truck[ currentCargoWeight > maxCargoWeight ]
+  then
+    modify($v){setOverloaded(true)};
+end
+
+query "GetOverloadedVehicles"
+  $v: /vehicleInstances[overloaded]
+end
